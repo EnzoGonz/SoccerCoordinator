@@ -10,41 +10,41 @@
 
 
 
-let joeSmith: [String : Any] = ["Name": "Joe Smith","Height": 42 , "Experience": "YES" , "Guardian(s)": "Jim and Jan Smith"]
+let joeSmith: [String : Any] = ["Name": "Joe Smith","Height": 42.0 , "Experience": "YES" , "Guardian(s)": "Jim and Jan Smith"]
 
-let jillTanner: [String : Any] = ["Name": "Jill Tanner", "Height": 36 , "Experience": "YES" , "Guardian(s)": "Clara Tanner"]
+let jillTanner: [String : Any] = ["Name": "Jill Tanner", "Height": 36.0 , "Experience": "YES" , "Guardian(s)": "Clara Tanner"]
 
-let  billBon: [String : Any] = ["Name": "Bill Bon", "Height": 43 , "Experience": "YES" , "Guardian(s)": "Sara and Jenny Bon"]
+let  billBon: [String : Any] = ["Name": "Bill Bon", "Height": 43.0 , "Experience": "YES" , "Guardian(s)": "Sara and Jenny Bon"]
 
-let  evaGordon: [String : Any] = ["Name": "Eva Gordon", "Height": 45 , "Experience": "NO" , "Guardian(s)": "Wendy and Mike Gordon"]
+let  evaGordon: [String : Any] = ["Name": "Eva Gordon", "Height": 45.0 , "Experience": "NO" , "Guardian(s)": "Wendy and Mike Gordon"]
 
-let  mattGill: [String : Any] = ["Name": "Matt Gill", "Height": 40 , "Experience": "NO" , "Guardian(s)": "Charles and Sylvia Gill"]
+let  mattGill: [String : Any] = ["Name": "Matt Gill", "Height": 40.0 , "Experience": "NO" , "Guardian(s)": "Charles and Sylvia Gill"]
 
-let  kimmyStein: [String : Any] = ["Name": "Kimmy Stein", "Height": 41 , "Experience": "NO" , "Guardian(s)": "Bill and Hillary Stein"]
+let  kimmyStein: [String : Any] = ["Name": "Kimmy Stein", "Height": 41.0 , "Experience": "NO" , "Guardian(s)": "Bill and Hillary Stein"]
 
-let  sammyAdams: [String : Any] = ["Name": "Sammy Adams", "Height": 45 , "Experience": "NO" , "Guardian(s)": "Jeff Adams"]
+let  sammyAdams: [String : Any] = ["Name": "Sammy Adams", "Height": 45.0 , "Experience": "NO" , "Guardian(s)": "Jeff Adams"]
 
-let  karlSaygan: [String : Any] = ["Name": "Karl Saygan", "Height": 42 , "Experience": "YES" , "Guardian(s)": "Heather Bledsoe"]
+let  karlSaygan: [String : Any] = ["Name": "Karl Saygan", "Height": 42.0 , "Experience": "YES" , "Guardian(s)": "Heather Bledsoe"]
 
-let  suzaneGreenberg: [String : Any] = ["Name": "Suzane Greenberg", "Height": 44 , "Experience": "YES" , "Guardian(s)": "Henrietta Dumas"]
+let  suzaneGreenberg: [String : Any] = ["Name": "Suzane Greenberg", "Height": 44.0 , "Experience": "YES" , "Guardian(s)": "Henrietta Dumas"]
 
-let  salDali: [String : Any] = ["Name": "Sal Dali", "Height": 41 , "Experience": "NO" , "Guardian(s)": "Gala Dali"]
+let  salDali: [String : Any] = ["Name": "Sal Dali", "Height": 41.0 , "Experience": "NO" , "Guardian(s)": "Gala Dali"]
 
-let  joeKavalier: [String : Any] = ["Name": "Joe Kavalier", "Height": 39 , "Experience": "NO" , "Guardian(s)": "Sam and Elaine Kavalier"]
+let  joeKavalier: [String : Any] = ["Name": "Joe Kavalier", "Height": 39.0 , "Experience": "NO" , "Guardian(s)": "Sam and Elaine Kavalier"]
 
-let  benFinkelstein: [String : Any] = ["Name": "Ben Finkelstein", "Height": 44 , "Experience": "NO" , "Guardian(s)": "Aaron and Jill Finkelstein"]
+let  benFinkelstein: [String : Any] = ["Name": "Ben Finkelstein", "Height": 44.0 , "Experience": "NO" , "Guardian(s)": "Aaron and Jill Finkelstein"]
 
-let  diegoSoto: [String : Any] = ["Name": "Diego Soto", "Height": 41 , "Experience": "YES" , "Guardian(s)": "Robin and Sarika Soto"]
+let  diegoSoto: [String : Any] = ["Name": "Diego Soto", "Height": 41.0 , "Experience": "YES" , "Guardian(s)": "Robin and Sarika Soto"]
 
-let  chloeAlaska: [String : Any] = ["Name": "Chloe Alaska", "Height": 47 , "Experience": "NO" , "Guardian(s)": "David and Jamie Alaska"]
+let  chloeAlaska: [String : Any] = ["Name": "Chloe Alaska", "Height": 47.0 , "Experience": "NO" , "Guardian(s)": "David and Jamie Alaska"]
 
-let  arnoldWillis: [String : Any] = ["Name": "Arnold Willis", "Height": 43 , "Experience": "NO" , "Guardian(s)": "Claire Willis"]
+let  arnoldWillis: [String : Any] = ["Name": "Arnold Willis", "Height": 43.0 , "Experience": "NO" , "Guardian(s)": "Claire Willis"]
 
-let  phillipHelm: [String : Any] = ["Name": "Phillip Helm", "Height": 44 , "Experience": "YES" , "Guardian(s)": "Thomas Helm and Eva Jones"]
+let  phillipHelm: [String : Any] = ["Name": "Phillip Helm", "Height": 44.0 , "Experience": "YES" , "Guardian(s)": "Thomas Helm and Eva Jones"]
 
-let  lesClay: [String : Any] = ["Name": "Les Clay", "Height": 42 , "Experience": "YES" , "Guardian(s)": "Wynonna Brown"]
+let  lesClay: [String : Any] = ["Name": "Les Clay", "Height": 42.0 , "Experience": "YES" , "Guardian(s)": "Wynonna Brown"]
 
-let  herschelKrustofski: [String : Any] = ["Name": "Herschel Krustofski", "Height": 45 , "Experience": "YES" , "Guardian(s)": "Hyman and Rachel Krustofski"]
+let  herschelKrustofski: [String : Any] = ["Name": "Herschel Krustofski", "Height": 45.0 , "Experience": "YES" , "Guardian(s)": "Hyman and Rachel Krustofski"]
 
 //A Tulup of palyers information
 
@@ -96,46 +96,49 @@ var numberOfNonExpPlayersPerTeam: Int = playersWithoutExperience.count / allTeam
 --------------------------------------
  */
 
-/*
-
-//A dictionary collection with the players and their corrosponding heights in inches
-
-let playersHeights: [String: Int] = [
-    "Joe Smith": 42 ,
-    "Jill Tanner": 36 ,
-    "Bill Bon": 43 ,
-    "Eva Gordon": 45 ,
-    "Matt Gill": 40 ,
-    "Kimmy Stein": 41 ,
-    "Sammy Adams": 45 ,
-    "Karl Saygan": 42 ,
-    "Suzane Greenberg": 44 ,
-    "Sal Dali": 41 ,
-    "Joe Kavalier": 39 ,
-    "Ben Finkelstein": 44 ,
-    "Diego Soto": 41 ,
-    "Chloe Alaska": 47 ,
-    "Arnold Willis": 43 ,
-    "Phillip Helm": 44 ,
-    "Les Clay": 42 ,
-    "Herschel Krustofski": 45
-]
+var totalNumberOfPlayers: Double = Double(players.count)
+var sumOfPlayersHeights: Double = 0
+var averageHeightOfPlayers: Double = 0
 
 
-//To find the average height of all players
+for playerName in players{
+    for (playerHeightLabel, height) in playerName {
+        if playerHeightLabel == "Height" {
+            sumOfPlayersHeights += height as! Double
+            averageHeightOfPlayers = sumOfPlayersHeights / totalNumberOfPlayers
+        }
+    }
 
-var sumOfPlayerHeights: Int = 0
+}
 
-for (players, heights) in playersHeights {
-    //I dont know why I have to have an exclamation point
-    sumOfPlayerHeights += playersHeights[players]!
+
+//Function to Finding the average height of  each Team
+
+
+func findAverageHeightOfTeam(teamName: [String]) -> Double{
+    
+    var sumOfTeamsPlayersHeights: Double = 0
+    var averageHeightOfTeam: Double = 0
+    
+    for playerName in players{
+        for (playerLabel, valueOfLabel) in playerName{
+            for player in teamName{
+                
+                if playerLabel == "Name"{
+                    if player == valueOfLabel as! String{
+                        sumOfTeamsPlayersHeights += playerName["Height"] as! Double
+                    }
+                }
+            }
+        }
+    }
+    
+    averageHeightOfTeam = sumOfTeamsPlayersHeights / Double(teamName.count)
+    
+    return averageHeightOfTeam
     
 }
 
-var averageHeightOfPlayers: Int = sumOfPlayerHeights / players.count
-
-
-*/
 
 
 
@@ -144,113 +147,54 @@ var averageHeightOfPlayers: Int = sumOfPlayerHeights / players.count
  ---------------------------
  Assigning players to teams
  ---------------------------
-*/
-
-
-
-/*
-
-
-//Function to Finding the average height of  each Team-------------------------------------------------
-
-
-func findAverageHeightOfTeam(teamName: [String]) -> Int{
-    var sumOfHeights: Int = 0
-    
-    for (playerWithHeight, height) in playersHeights{
-        for player in teamName {
-            
-            if playerWithHeight == player {sumOfHeights += height}
-        }
-    }
-    
-    let averageHeight: Int = sumOfHeights / teamName.count
-    return averageHeight
-}
-
-//Add first player to each team to begin average height check
-
-for player in playersWithExperience{
-    
-    switch true {
-    case teamSharks.count < 1:
-        teamSharks.append(player)
-        playersWithExperience.remove(at: 0)
-        
-    case teamDragons.count < 1:
-        teamDragons.append(player)
-        playersWithExperience.remove(at: 0)
-        
-    case teamRaptors.count < 1:
-        teamRaptors.append(player)
-        playersWithExperience.remove(at: 0)
-        
-    default: Void()
-    }
-}
-
-//Create variables that hold each teams average height
-
-var teamSharksAverageHeight: Int = findAverageHeightOfTeam(teamName: teamSharks)
-var teamDragonsAverageHeight: Int = findAverageHeightOfTeam(teamName: teamDragons)
-var teamRaptorsAverageHeight: Int = findAverageHeightOfTeam(teamName: teamRaptors)
-
-//--------------------------------------------------------------------------------------
-
-
  */
- 
- 
- 
- 
-
 
 //Assign players ot teams based on experience
 
-//Perhaps turn these two into one function?
+//A function that takes input of list of experienced players or non-experienced players and the number of players there should be for either catagory which switches on true to assign players to teams
 
+var teamSharksAverageHeight: Double = 0
+var teamDragonsAverageHeight: Double = 0
+var teamRaptorsAverageHeight: Double = 0
 
- 
- 
- for player in playersWithExperience{
- 
-    switch true {
-        
-    case teamSharks.count < numberOfExpPlayersPerTeam:
-        teamSharks.append(player)
-        
-        
-    case teamDragons.count < numberOfExpPlayersPerTeam:
-        teamDragons.append(player)
-        
-        
-    case teamRaptors.count < numberOfExpPlayersPerTeam:
-        teamRaptors.append(player)
-        
-    default: print("I can'put this player anywhere yet")
-    }
-}
-
-for player in playersWithoutExperience{
+func assignPlayers(withExpOrWithout:[String], playersPerTeam: Int){
     
+    for player in withExpOrWithout{
+        
         switch true {
             
-        case teamSharks.count < numberOfPlayersPerTeam:
+        case teamSharks.count < playersPerTeam:
             teamSharks.append(player)
-        
-        case teamDragons.count < numberOfPlayersPerTeam:
+            teamSharksAverageHeight = findAverageHeightOfTeam(teamName: teamSharks)
+            print(teamSharksAverageHeight)
+            
+        case teamDragons.count < playersPerTeam:
             teamDragons.append(player)
-        
-        case teamRaptors.count < numberOfPlayersPerTeam:
+            teamDragonsAverageHeight = findAverageHeightOfTeam(teamName: teamDragons)
+            print(teamDragonsAverageHeight)
+            
+        case teamRaptors.count < playersPerTeam:
             teamRaptors.append(player)
+            teamRaptorsAverageHeight = findAverageHeightOfTeam(teamName: teamRaptors)
+            print(teamRaptorsAverageHeight)
             
         default: print("I can'put this player anywhere yet")
+        }
     }
 }
+
+
+//calling Function to assign players
+
+assignPlayers(withExpOrWithout: playersWithExperience, playersPerTeam: numberOfExpPlayersPerTeam)
+assignPlayers(withExpOrWithout: playersWithoutExperience, playersPerTeam: numberOfPlayersPerTeam)
 
 print("Team Sharks:", teamSharks)
 print("Team Dragons", teamDragons)
 print("Team Raptors", teamRaptors)
+
+
+
 
 
 
@@ -266,49 +210,33 @@ var letters: [String: String] = [:]
 for playerName in players{
     for (playerNameLabel, name) in playerName{
         
-        
-        for player in teamSharks{
-            if playerNameLabel == "Name"{
-                if player == name as! String{
-                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Sharks. The first practice of the season is March 17, at 3pm. Thank You."
-                    print(letters[player] ?? "No Letter")
+        func playersInformation(teamNameArray: [String],teamNameString: String, practiceTime: String){
             
+            for player in teamNameArray{
+                if playerNameLabel == "Name"{
+                    if player == name as! String{
+                        letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for \(teamNameString). The first practice of the season is \(practiceTime). Thank You."
+                        print(letters[player] ?? "No Letter")
+                        
+                    }
                 }
             }
-    
         }
         
-        
-        for player in teamDragons{
-            if playerNameLabel == "Name"{
-                if player == name as! String{
-                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Dragons. The first practice of the season is March 17, at 1pm. Thank You."
-                    print(letters[player] ?? "No Letter")
-                    
-                }
-            }
-            
-        }
-        
-        
-        for player in teamRaptors{
-            if playerNameLabel == "Name"{
-                if player == name as! String{
-                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Raptors. The first practice of the season is March 18, at 1pm. Thank You."
-                    print(letters[player] ?? "No Letter")
-                    
-                }
-            }
-            
-        }
-        
-        
-        
-        
-        
+        playersInformation(teamNameArray: teamSharks, teamNameString: "Team Sharks", practiceTime: "March 17, at 3pm")
+        playersInformation(teamNameArray: teamDragons, teamNameString: "Team Dragons", practiceTime: "March 17, at 1pm")
+        playersInformation(teamNameArray: teamRaptors, teamNameString: "Team Raptors", practiceTime: "March 18, at 1pm")
         
     }
 }
+
+
+
+
+
+
+
+
 
 
 
