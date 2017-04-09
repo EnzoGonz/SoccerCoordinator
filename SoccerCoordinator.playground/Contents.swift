@@ -6,28 +6,49 @@
 */
 
 
-//A dictionary collection with all players information
+//Dictionary collections with all players information
 
-let players = [
-  "Joe Smith" : " Height- 42 , Experience- YES , Guardian(s)- Jim and Jan Smith ",
-  "Jill Tanner" : " Height- 36 , Experience- YES , Guardian(s)- Clara Tanner ",
-  "Bill Bon" : " Height- 43 , Experience- YES , Guardian(s)- Sara and Jenny Bon ",
-  "Eva Gordon" : " Height- 45 , Experience- NO , Guardian(s)- Wendy and Mike Gordon ",
-  "Matt Gill" : " Height- 40 , Experience- NO , Guardian(s)- Charles and Sylvia Gill ",
-  "Kimmy Stein" : " Height- 41 , Experience- NO , Guardian(s)- Bill and Hillary Stein ",
-  "Sammy Adams" : " Height- 45 , Experience- NO , Guardian(s)- Jeff Adams ",
-  "Karl Saygan" : " Height- 42 , Experience- YES , Guardian(s)- Heather Bledsoe ",
-  "Suzane Greenberg" : " Height- 44 , Experience- YES , Guardian(s)- Henrietta Dumas ",
-  "Sal Dali" : " Height- 41 , Experience- NO , Guardian(s)- Gala Dali ",
-  "Joe Kavalier" : " Height- 39 , Experience- NO , Guardian(s)- Sam and Elaine Kavalier ",
-  "Ben Finkelstein" : " Height- 44 , Experience- NO , Guardian(s)- Aaron and Jill Finkelstein ",
-  "Diego Soto" : " Height- 41 , Experience- YES , Guardian(s)- Robin and Sarika Soto ",
-  "Chloe Alaska" : " Height- 47 , Experience- NO , Guardian(s)- David and Jamie Alaska ",
-  "Arnold Willis" : " Height- 43 , Experience- NO , Guardian(s)- Claire Willis ",
-  "Phillip Helm" : " Height- 44 , Experience- YES , Guardian(s)- Thomas Helm and Eva Jones ",
-  "Les Clay" : " Height- 42 , Experience- YES , Guardian(s)- Wynonna Brown ",
-  "Herschel Krustofski" : " Height- 45 , Experience- YES , Guardian(s)- Hyman and Rachel Krustofski "
-]
+
+
+let joeSmith: [String : Any] = ["Name": "Joe Smith","Height": 42 , "Experience": "YES" , "Guardian(s)": "Jim and Jan Smith"]
+
+let jillTanner: [String : Any] = ["Name": "Jill Tanner", "Height": 36 , "Experience": "YES" , "Guardian(s)": "Clara Tanner"]
+
+let  billBon: [String : Any] = ["Name": "Bill Bon", "Height": 43 , "Experience": "YES" , "Guardian(s)": "Sara and Jenny Bon"]
+
+let  evaGordon: [String : Any] = ["Name": "Eva Gordon", "Height": 45 , "Experience": "NO" , "Guardian(s)": "Wendy and Mike Gordon"]
+
+let  mattGill: [String : Any] = ["Name": "Matt Gill", "Height": 40 , "Experience": "NO" , "Guardian(s)": "Charles and Sylvia Gill"]
+
+let  kimmyStein: [String : Any] = ["Name": "Kimmy Stein", "Height": 41 , "Experience": "NO" , "Guardian(s)": "Bill and Hillary Stein"]
+
+let  sammyAdams: [String : Any] = ["Name": "Sammy Adams", "Height": 45 , "Experience": "NO" , "Guardian(s)": "Jeff Adams"]
+
+let  karlSaygan: [String : Any] = ["Name": "Karl Saygan", "Height": 42 , "Experience": "YES" , "Guardian(s)": "Heather Bledsoe"]
+
+let  suzaneGreenberg: [String : Any] = ["Name": "Suzane Greenberg", "Height": 44 , "Experience": "YES" , "Guardian(s)": "Henrietta Dumas"]
+
+let  salDali: [String : Any] = ["Name": "Sal Dali", "Height": 41 , "Experience": "NO" , "Guardian(s)": "Gala Dali"]
+
+let  joeKavalier: [String : Any] = ["Name": "Joe Kavalier", "Height": 39 , "Experience": "NO" , "Guardian(s)": "Sam and Elaine Kavalier"]
+
+let  benFinkelstein: [String : Any] = ["Name": "Ben Finkelstein", "Height": 44 , "Experience": "NO" , "Guardian(s)": "Aaron and Jill Finkelstein"]
+
+let  diegoSoto: [String : Any] = ["Name": "Diego Soto", "Height": 41 , "Experience": "YES" , "Guardian(s)": "Robin and Sarika Soto"]
+
+let  chloeAlaska: [String : Any] = ["Name": "Chloe Alaska", "Height": 47 , "Experience": "NO" , "Guardian(s)": "David and Jamie Alaska"]
+
+let  arnoldWillis: [String : Any] = ["Name": "Arnold Willis", "Height": 43 , "Experience": "NO" , "Guardian(s)": "Claire Willis"]
+
+let  phillipHelm: [String : Any] = ["Name": "Phillip Helm", "Height": 44 , "Experience": "YES" , "Guardian(s)": "Thomas Helm and Eva Jones"]
+
+let  lesClay: [String : Any] = ["Name": "Les Clay", "Height": 42 , "Experience": "YES" , "Guardian(s)": "Wynonna Brown"]
+
+let  herschelKrustofski: [String : Any] = ["Name": "Herschel Krustofski", "Height": 45 , "Experience": "YES" , "Guardian(s)": "Hyman and Rachel Krustofski"]
+
+//A Tulup of palyers information
+
+let players: [[String : Any]] = [joeSmith, jillTanner, billBon, evaGordon, mattGill, kimmyStein, sammyAdams, karlSaygan, suzaneGreenberg, salDali, joeKavalier, benFinkelstein, diegoSoto, chloeAlaska, arnoldWillis, phillipHelm, lesClay, herschelKrustofski]
 
 //Collections for the different teams
 
@@ -48,50 +69,25 @@ var numberOfPlayersPerTeam: Int = players.count / allTeams.count
  --------------------------------------------------
 */
 
+//Separating the players with experience from those without and assigning them to a collection
 
-
-//A dictionary collection with the players and whether they have experience playing soccer
-
-let playersExperience: [String: String] = [
-    "Joe Smith": "YES" ,
-    "Jill Tanner": "YES" ,
-    "Bill Bon": "YES" ,
-    "Eva Gordon": "NO" ,
-    "Matt Gill": "NO" ,
-    "Kimmy Stein": "NO" ,
-    "Sammy Adams": "NO" ,
-    "Karl Saygan": "YES" ,
-    "Suzane Greenberg": "YES" ,
-    "Sal Dali": "NO" ,
-    "Joe Kavalier": "NO" ,
-    "Ben Finkelstein": "NO" ,
-    "Diego Soto": "YES" ,
-    "Chloe Alaska": "NO" ,
-    "Arnold Willis": "NO" ,
-    "Phillip Helm": "YES" ,
-    "Les Clay": "YES" ,
-    "Herschel Krustofski": "YES"
-]
-
-
-
-//Separating the players that with experience from those without and assign them to a collection
 
 var playersWithExperience: [String] = []
 var playersWithoutExperience: [String] = []
 
-for (player, experience) in playersExperience {
-    
-    if experience == "YES" {playersWithExperience.append(player)
-    } else if experience == "NO" {playersWithoutExperience.append(player)}
-    
+for playerName in players{
+    if playerName["Experience"] as! String == "YES"{
+        playersWithExperience.append(playerName["Name"] as! String)
+    } else if playerName["Experience"] as! String == "NO"{ playersWithoutExperience.append(playerName["Name"] as! String)
+    }
 }
 
-//The number of experienced players there should be per team
+//The number of experienced and nonexperienced players there should be per team
 
-var numberOfExpPlayersPerTeam: Int = (playersWithExperience.count / allTeams.count)
+var numberOfExpPlayersPerTeam: Int = playersWithExperience.count / allTeams.count
+var numberOfNonExpPlayersPerTeam: Int = playersWithoutExperience.count / allTeams.count
 
-
+ 
 
 
 /*
@@ -100,7 +96,7 @@ var numberOfExpPlayersPerTeam: Int = (playersWithExperience.count / allTeams.cou
 --------------------------------------
  */
 
-
+/*
 
 //A dictionary collection with the players and their corrosponding heights in inches
 
@@ -131,7 +127,7 @@ let playersHeights: [String: Int] = [
 var sumOfPlayerHeights: Int = 0
 
 for (players, heights) in playersHeights {
-    
+    //I dont know why I have to have an exclamation point
     sumOfPlayerHeights += playersHeights[players]!
     
 }
@@ -139,7 +135,7 @@ for (players, heights) in playersHeights {
 var averageHeightOfPlayers: Int = sumOfPlayerHeights / players.count
 
 
-
+*/
 
 
 
@@ -150,32 +146,12 @@ var averageHeightOfPlayers: Int = sumOfPlayerHeights / players.count
  ---------------------------
 */
 
-for player in playersWithExperience{
-    
-    switch true {
-    case teamSharks.count < numberOfExpPlayersPerTeam: teamSharks.append(player)
-    case teamDragons.count < numberOfExpPlayersPerTeam: teamDragons.append(player)
-    case teamRaptors.count < numberOfExpPlayersPerTeam: teamRaptors.append(player)
-        default: Void()
-    }
-    
-}
-
-for player in playersWithoutExperience{
-    
-    switch true {
-        case (teamSharks.count < numberOfPlayersPerTeam): teamSharks.append(player)
-        case (teamRaptors.count < numberOfPlayersPerTeam): teamRaptors.append(player)
-        case (teamDragons.count < numberOfPlayersPerTeam): teamDragons.append(player)
-            default: Void()
-    }
 
 
-}
+/*
 
 
-
-//Finding the average height of  each Team
+//Function to Finding the average height of  each Team-------------------------------------------------
 
 
 func findAverageHeightOfTeam(teamName: [String]) -> Int{
@@ -189,19 +165,153 @@ func findAverageHeightOfTeam(teamName: [String]) -> Int{
     }
     
     let averageHeight: Int = sumOfHeights / teamName.count
-            return averageHeight
+    return averageHeight
 }
 
+//Add first player to each team to begin average height check
+
+for player in playersWithExperience{
+    
+    switch true {
+    case teamSharks.count < 1:
+        teamSharks.append(player)
+        playersWithExperience.remove(at: 0)
+        
+    case teamDragons.count < 1:
+        teamDragons.append(player)
+        playersWithExperience.remove(at: 0)
+        
+    case teamRaptors.count < 1:
+        teamRaptors.append(player)
+        playersWithExperience.remove(at: 0)
+        
+    default: Void()
+    }
+}
+
+//Create variables that hold each teams average height
+
 var teamSharksAverageHeight: Int = findAverageHeightOfTeam(teamName: teamSharks)
-var teamRaptorsAverageHeight: Int = findAverageHeightOfTeam(teamName: teamRaptors)
 var teamDragonsAverageHeight: Int = findAverageHeightOfTeam(teamName: teamDragons)
+var teamRaptorsAverageHeight: Int = findAverageHeightOfTeam(teamName: teamRaptors)
+
+//--------------------------------------------------------------------------------------
 
 
+ */
+ 
+ 
+ 
+ 
+
+
+//Assign players ot teams based on experience
+
+//Perhaps turn these two into one function?
 
 
  
-
  
+ for player in playersWithExperience{
+ 
+    switch true {
+        
+    case teamSharks.count < numberOfExpPlayersPerTeam:
+        teamSharks.append(player)
+        
+        
+    case teamDragons.count < numberOfExpPlayersPerTeam:
+        teamDragons.append(player)
+        
+        
+    case teamRaptors.count < numberOfExpPlayersPerTeam:
+        teamRaptors.append(player)
+        
+    default: print("I can'put this player anywhere yet")
+    }
+}
+
+for player in playersWithoutExperience{
+    
+        switch true {
+            
+        case teamSharks.count < numberOfPlayersPerTeam:
+            teamSharks.append(player)
+        
+        case teamDragons.count < numberOfPlayersPerTeam:
+            teamDragons.append(player)
+        
+        case teamRaptors.count < numberOfPlayersPerTeam:
+            teamRaptors.append(player)
+            
+        default: print("I can'put this player anywhere yet")
+    }
+}
+
+print("Team Sharks:", teamSharks)
+print("Team Dragons", teamDragons)
+print("Team Raptors", teamRaptors)
+
+
+
+/*
+---------------------------------------------
+Sending letters to the guardians of players
+ ---------------------------------------------
+*/
+
+
+var letters: [String: String] = [:]
+
+for playerName in players{
+    for (playerNameLabel, name) in playerName{
+        
+        
+        for player in teamSharks{
+            if playerNameLabel == "Name"{
+                if player == name as! String{
+                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Sharks. The first practice of the season is March 17, at 3pm. Thank You."
+                    print(letters[player] ?? "No Letter")
+            
+                }
+            }
+    
+        }
+        
+        
+        for player in teamDragons{
+            if playerNameLabel == "Name"{
+                if player == name as! String{
+                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Dragons. The first practice of the season is March 17, at 1pm. Thank You."
+                    print(letters[player] ?? "No Letter")
+                    
+                }
+            }
+            
+        }
+        
+        
+        for player in teamRaptors{
+            if playerNameLabel == "Name"{
+                if player == name as! String{
+                    letters[player] = "Dear \(playerName["Guardian(s)"] ?? "No Guardians"), We at the Soccer League are happy to notify you that your child \(player) will be playing for Team Raptors. The first practice of the season is March 18, at 1pm. Thank You."
+                    print(letters[player] ?? "No Letter")
+                    
+                }
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+    }
+}
+
+
+
 
 
 
