@@ -155,7 +155,13 @@ var teamDragonsAverageHeight: Double = 0
 var teamRaptorsAverageHeight: Double = 0
 
 
-//A function that takes input of list of experienced players or non-experienced players and the number of players there should be for either catagory-- as well as players heights by calling a previous function-- which switches on true to assign players to teams
+
+
+
+//A funtion that returns true if the assignPlayers function assigns players to teams in such a way that fits the requirments of number of experienced players per team and height average limits.
+func actuallyAssignPlayers() -> Bool {
+
+//A function that takes input of list of experienced players or non-experienced players and the number of players there should be for either catagory-- as well as players heights by calling a previous function-- which switches on true to assign players to teams to assign players to a team
 func assignPlayers(withExpOrWithout:[String], playersPerTeam: Int){
     
     for player in withExpOrWithout{
@@ -179,21 +185,68 @@ func assignPlayers(withExpOrWithout:[String], playersPerTeam: Int){
             teamRaptorsAverageHeight = findAverageHeightOfTeam(teamName: teamRaptors)
             
             
-        default: if teamSharks.count < numberOfPlayersPerTeam {teamSharks.append(player)}
-        else if teamDragons.count < numberOfPlayersPerTeam {teamDragons.append(player)}
-        else if teamRaptors.count < numberOfPlayersPerTeam {teamRaptors.append(player)}
+        default: if teamSharks.count < playersPerTeam {teamSharks.append(player)}
+        else if teamDragons.count < playersPerTeam {teamDragons.append(player)}
+        else if teamRaptors.count < playersPerTeam {teamRaptors.append(player)}
             
         }
+        
+        
+        
     }
 }
+    
+    //calling Functions to assign players to teams
+    assignPlayers(withExpOrWithout: playersWithExperience, playersPerTeam: numberOfExpPlayersPerTeam)
+    assignPlayers(withExpOrWithout: playersWithoutExperience, playersPerTeam: numberOfPlayersPerTeam)
+    
+    
+    //checking if the average height of each team is within 1.5 inches of each other team, -return true if the averages are within limits- and -erasing team arrays and return false if not within limits-
+    
+    if
+        ((teamSharksAverageHeight - teamRaptorsAverageHeight > -1.5) && (teamSharksAverageHeight - teamRaptorsAverageHeight < 1.5))
+            &&
+            ((teamSharksAverageHeight - teamDragonsAverageHeight > -1.5) && (teamSharksAverageHeight - teamDragonsAverageHeight < 1.5))
+            &&
+            ((teamDragonsAverageHeight - teamRaptorsAverageHeight > -1.5) && (teamDragonsAverageHeight - teamRaptorsAverageHeight < 1.5))
+            &&
+            ((teamDragonsAverageHeight - teamSharksAverageHeight > -1.5) && (teamDragonsAverageHeight - teamSharksAverageHeight < 1.5))
+            &&
+            ((teamRaptorsAverageHeight - teamDragonsAverageHeight > -1.5) && (teamRaptorsAverageHeight - teamDragonsAverageHeight < 1.5))
+            &&
+            ((teamRaptorsAverageHeight - teamSharksAverageHeight > -1.5) && (teamRaptorsAverageHeight - teamSharksAverageHeight < 1.5))
+        
+    {return true} else {
+        
+        teamSharks = []
+        teamRaptors = []
+        teamDragons = []
+        return false}
+}
 
+//If the function does not return true (which means the average height of each team is not with 1.5 inches of each other) change the order of the arrays playersWithExperience and playersWithoutExperience and try again.
+var counter = 0
 
+while actuallyAssignPlayers() == false{
 
-//calling Functions to assign players to teams
-assignPlayers(withExpOrWithout: playersWithExperience, playersPerTeam: numberOfExpPlayersPerTeam)
-assignPlayers(withExpOrWithout: playersWithoutExperience, playersPerTeam: numberOfPlayersPerTeam)
-
-
+    
+    var myTempArrayWithExp: [String] = []
+    
+    
+        myTempArrayWithExp.append(playersWithExperience[0])
+        playersWithExperience.remove(at: 0)
+        playersWithExperience.append(myTempArrayWithExp[0])
+        myTempArrayWithExp.remove(at: 0)
+        
+        
+    var myTempArrayWithOutExp: [String] = []
+    
+    
+        myTempArrayWithOutExp.append(playersWithoutExperience[0])
+        playersWithoutExperience.remove(at: 0)
+        playersWithoutExperience.append(myTempArrayWithOutExp[0])
+        myTempArrayWithOutExp.remove(at: 0)
+}
 
 
 /*
